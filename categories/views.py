@@ -17,6 +17,7 @@ from rest_framework import status
 
 class CategoriesListVIew(ListAPIView):
     serializer_class = CategorySerializer
+    print('sdaf')
     def get_queryset(self):
         return Category.objects.all()
 
