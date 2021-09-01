@@ -9,12 +9,6 @@ from cards.models import Question
 from rest_framework import status
 
 
-# class CategoryAPIView(APIView):
-#     def get(self, request):
-#         categories = Category.objects.all()
-#         serializer = CategorySerializer(categories, many=True)
-#         return Response(serializer.data)
-
 class CategoriesListVIew(ListAPIView):
     serializer_class = CategorySerializer
     def get_queryset(self):
